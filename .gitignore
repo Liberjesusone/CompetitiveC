@@ -1,0 +1,28 @@
+# Build output
+build/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+
+# MSVC / Visual Studio
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.suo
+*.user
+.vs/
+.vscode/
+
+# Compiled binaries
+*.exe
+*.out
+*.o
+*.obj
+
+# GCC / Clang
+*.d
