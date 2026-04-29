@@ -41,9 +41,19 @@ const ll oo = numeric_limits<ll>::max();
  * -1
  */
 
- // 8 7 5 5 3 -1
- // 8       4 3
-
+/**
+ * Multiset solution: store all ticket prices in a balanced BST (multiset).
+ *
+ * For each customer's desired_price:
+ *   - upper_bound(desired_price) → first ticket strictly greater than desired_price  O(log n)
+ *   - Step back one position     → largest ticket <= desired_price
+ *   - If no such ticket exists (iterator == begin), print -1
+ *   - Otherwise print it and erase by iterator (removes exactly one copy)  O(log n)
+ *
+ * Erasing by iterator instead of by value is critical when duplicate prices exist:
+ * erase(value) would remove all copies, erase(iterator) removes only one.
+ * Total complexity: O((n + m) log n)
+ */
 int main()
 {
     io_boost;
