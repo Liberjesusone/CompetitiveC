@@ -4,7 +4,6 @@ using namespace std;
 #define io_boost ios_base::sync_with_stdio(0);cin.tie(0);
 using ll = long long;
 using ull = unsigned long long;
-using ll = long long;
 const ll MOD = 1e9 + 7;
 const ll MAXN = 2e5 + 7;
 const ll oo = numeric_limits<ll>::max();
@@ -66,7 +65,7 @@ ll factorial(ll n)
 
 /** @brief Binomimial coefficient C(n, k) = n! / (k!(n-k)!) 
  */
-double binom(ll n, ll k)
+ll binom(ll n, ll k)
 {
     return factorial(n) / (factorial(k) * factorial(n-k));
 }
