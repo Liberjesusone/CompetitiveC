@@ -37,20 +37,19 @@ const ll oo = numeric_limits<ll>::max();
  * 5
  */
 
-/**
- * Median solution: the value that minimizes the sum of absolute differences is
- * always the median, not the mean.
- *
- * Key insight: the mean minimizes sum of SQUARED differences (quadratic cost).
- * This problem uses linear cost |p_i - x|, so the median is optimal.
- * Intuition: at any non-median point, more sticks are on one side than the other —
- * moving one step toward the majority always reduces total cost, until you reach
- * the median where both sides balance out.
- *
- * Sort the array, pick the middle element (or average of two middles for even n),
- * then sum |p_i - median| for all sticks. O(n log n)
- */
-
+/** @brief                                                                                                                     
+ * Median solution: the value that minimizes the sum of absolute differences is                                               
+ * always the median, not the mean.                                                                                         
+ *                                                                                                                          
+ * Key insight: the mean minimizes sum of SQUARED differences (quadratic cost).                                               
+ * This problem uses linear cost |p_i - x|, so the median is optimal.                                                         
+ * Intuition: at any non-median point, more sticks are on one side than the other —                                           
+ * moving one step toward the majority always reduces total cost, until you reach                                             
+ * the median where both sides balance out.                                                                            
+ *                                                                                                                     
+ * Sort the array, pick the middle element (or average of two middles for even n),                                     
+ * then sum |p_i - median| for all sticks. O(n log n)                                                                                                                                                                       
+ */  
 int main()
 {
     io_boost;
