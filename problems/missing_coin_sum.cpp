@@ -4,10 +4,8 @@ using namespace std;
 #define io_boost ios_base::sync_with_stdio(0);cin.tie(0);
 using ll = long long;
 using ull = unsigned long long;
-using ll = long long;
 const ll MOD = 1e9 + 7;
 const ll MAXN = 2e5 + 7;
-ll n, m, q;
 const ll oo = numeric_limits<ll>::max();
 
 /** @brief

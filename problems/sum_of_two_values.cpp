@@ -36,7 +36,7 @@ const ll oo = numeric_limits<ll>::max();
  */
 
 
-/**
+/** @brief
  * Multimap solution: insert each value with its position as we scan, and
  * immediately check if its complement (x - value) already exists in the map.
  *
