@@ -63,9 +63,9 @@ long long modinv(long long b, long long mod = 1e9 + 7) noexcept
     return binpow(b, mod - 2, mod);
 }
 
-long long divmod(long long a, long long b, long long mod = 1e9 + 7) noexcept
+long long divmod(long long num, long long div, long long mod = 1e9 + 7) noexcept
 {
-    return a % mod * modinv(b, mod) % mod;
+    return num % mod * modinv(div, mod) % mod;
 }
 
 const int MAX_FACT = 1e6 + 5; // 1 000 005
