@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+//#include <bits/chronometer.h>
 using namespace std;
 #define endl "\n"
 #define io_boost ios_base::sync_with_stdio(0);cin.tie(0);
@@ -8,9 +9,9 @@ const ll MOD = 1e9 + 7;
 const ll MAXN = 2e5 + 7;
 const ll oo = numeric_limits<ll>::max();
 
-
 namespace Module
 {
+    // Does O(log_2(exp)) iterations
     long long binpow(long long base, long long exp, long long mod = 1e9 + 7) noexcept
     {
         long long result = 1;
@@ -75,16 +76,32 @@ namespace Module
 }
 using namespace Module;
 
-
+/** @brief   
+ * Time limit: 1.00 s
+ * Memory limit: 512 MB
+ * 
+ * Your task is to calculate the number of bit strings of length n.
+ * For example, if n=3, the correct answer is 8, because the possible bit strings are 000, 001, 010, 
+ * 011, 100, 101, 110, and 111.
+ * 
+ * - Input
+ * The only input line has an integer n.
+ * 
+ * - Output
+ * Print the result modulo 10^9+7.
+ * 
+ * - Constraints
+ * 1 <= n <= 10^6
+ * 
+ * Example
+ * Input:
+ * 3
+ * 
+ * Output:
+ * 8
+ */
 int main()
 {
-    io_boost;
-
-    precompute();
-
-    for (ll i = 0; i < 20; i++)
-        cout << "Fact: " << fact[i] << "   - inverse: " << inv_fact[i] << endl; 
-    
-    
-    return 0;
+    io_boost; ll n; cin >> n; cout << binpow(2, n) << endl; 
+    return 0; 
 }

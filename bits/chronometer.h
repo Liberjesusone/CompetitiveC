@@ -1,7 +1,7 @@
 #pragma once                                                                                                                  
 #include <chrono>
 
-namespace cronometer
+namespace chronometer
 {                                                                                                        
     using clock = std::chrono::high_resolution_clock;                                                                         
     static clock::time_point _start;                                                                                          
