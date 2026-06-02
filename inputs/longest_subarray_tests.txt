@@ -1,0 +1,105 @@
+# 20 casos de prueba para longest_subarray (subcadena comun mas larga)
+# Cada bloque: N, luego discurso1, luego discurso2.
+# La linea '# Caso k -> ...' indica la salida esperada (longitud y un ejemplo valido;
+#   si hay empates, cualquier subcadena de esa longitud es correcta).
+# El programa lee UN caso por ejecucion: pega las 3 lineas del bloque (sin comentarios).
+
+# Caso  1  ->  longitud 9   ejemplo: PARATODOS
+15
+CAMBIOPARATODOS
+UNIDOSPARATODOS
+
+# Caso  2  ->  longitud 5   ejemplo: AAAAA
+5
+AAAAA
+AAAAA
+
+# Caso  3  ->  longitud 0   ejemplo: (cadena vacia)
+5
+AAAAA
+BBBBB
+
+# Caso  4  ->  longitud 4   ejemplo: ABCD
+6
+ABCDEF
+XABCDY
+
+# Caso  5  ->  longitud 1   ejemplo: A
+1
+A
+A
+
+# Caso  6  ->  longitud 0   ejemplo: (cadena vacia)
+1
+A
+B
+
+# Caso  7  ->  longitud 12  ejemplo: ABCDEFGHIJKL
+12
+ABCDEFGHIJKL
+ABCDEFGHIJKL
+
+# Caso  8  ->  longitud 5   ejemplo: HELLO (tambien vale WORLD)
+10
+HELLOWORLD
+WORLDHELLO
+
+# Caso  9  ->  longitud 8   ejemplo: BCABCABC
+9
+ABCABCABC
+BCABCABCA
+
+# Caso 10  ->  longitud 7   ejemplo: TESTING
+11
+TESTINGCODE
+CODETESTING
+
+# Caso 11  ->  longitud 9   ejemplo: XYZXYZXYZ
+10
+XYZXYZXYZX
+ZXYZXYZXYZ
+
+# Caso 12  ->  longitud 5   ejemplo: ANANA
+6
+BANANA
+NANANA
+
+# Caso 13  ->  longitud 5   ejemplo: GRAMM
+11
+PROGRAMMING
+GRAMMARLYXX
+
+# Caso 14  ->  longitud 9   ejemplo: SSISSIPPI
+11
+MISSISSIPPI
+SSISSIPPIMM
+
+# Caso 15  ->  longitud 1   ejemplo: cualquier letra (cadenas invertidas)
+10
+QWERTYUIOP
+POIUYTREWQ
+
+# Caso 16  ->  longitud 7   ejemplo: ABABABA (tambien vale BABABAB)
+8
+ABABABAB
+BABABABA
+
+# Caso 17  ->  longitud 6   ejemplo: HACKER
+10
+HACKERRANK
+RANKHACKER
+
+# Caso 18  ->  longitud 9   ejemplo: COMPETITI
+11
+COMPETITIVE
+COMPETITION
+
+# Caso 19  ->  longitud 9   ejemplo: AAAAAAAAA
+10
+AAAAAAAAAA
+AAAAAAAAAB
+
+# Caso 20  ->  longitud 9   ejemplo: ABCDEFGHI
+10
+ZABCDEFGHI
+ABCDEFGHIZ
