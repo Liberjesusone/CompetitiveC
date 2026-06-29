@@ -1,6 +1,10 @@
 # Build output
 build/
 
+# Rust (Cargo) build output y ejecutable unificado del F5
+target/
+.run/
+
 # CMake generated files
 CMakeCache.txt
 CMakeFiles/
@@ -16,7 +20,7 @@ Makefile
 *.suo
 *.user
 .vs/
-.vscode/
+#.vscode/         to help others replicate my own vs code configuration 
 
 # Compiled binaries
 *.exe
