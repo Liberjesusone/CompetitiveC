@@ -5,7 +5,7 @@
     "cmake.configureArgs": ["-DCMAKE_BUILD_TYPE=Debug"],
 
     // Error Lens: NO mostrar los mensajes en linea dentro de archivos .md
-    "errorLens.excludePatterns": ["**/*.md"],
+    "errorLens.excludePatterns": ["**/*.{md,rs}"],
 
     // rust-analyzer: says which especifically is the Cargo project (the root one) 
     "rust-analyzer.linkedProjects": ["./Cargo.toml"],

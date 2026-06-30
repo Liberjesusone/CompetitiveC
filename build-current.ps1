@@ -54,6 +54,7 @@ switch ($Ext) {
         # ---------- Case C++ ----------
         # Uses the pipeline CMake/Nija. compile the target called as the file.
         Write-Host "cmake  -> target $Name"
+        cmake -B build
         cmake --build build --target $Name
 
         # CMake leaves the .exe in build\<nombre>.exe; we copy it to the fixed place .run\current.exe 

@@ -11,3 +11,7 @@ autobins = false
 name = "coin_piles"
 path = "problems/coin_piles.rs"
 
+[[bin]]
+name = "palindrome_reorder"
+path = "problems/palindrome_reorder.rs"
+
