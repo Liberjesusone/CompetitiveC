@@ -5,7 +5,7 @@ impl Scanner
 {
     fn new(s: &str) -> Self { Scanner { buf: s.split_ascii_whitespace().map(String::from).collect::<Vec<_>>().into_iter() } }
     fn next<T: std::str::FromStr>(&mut self) -> T { self.buf.next().unwrap().parse().ok().expect("parse") }
-    fn vec<T: std::str::FromStr>(&mut self, n: usize) -> Vec<T> { (0..n).map(|_| self.next()).collect() }
+    #[allow(dead_code)] fn vec<T: std::str::FromStr>(&mut self, n: usize) -> Vec<T> { (0..n).map(|_| self.next()).collect() }
 }
 
 /// # Time limit: 1.00 s
